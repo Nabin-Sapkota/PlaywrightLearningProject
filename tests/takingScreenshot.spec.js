@@ -16,6 +16,6 @@ test("full page screenshot", async({page}) => {
 test("element screenshot", async({page}) => { // provide the locaotor of the element as well.
 
     await page.goto("https://demo.opencart.com/");
-    await page.locator('//*[@id="content"]/div[2]/div[1]').screenshot({ path: `C:/Users/Dell/Desktop/Playwright Automation/screenshots/${Date.now()}_screenshot_element.png`
+    await page.locator('//*[@id="content"]/div[2]/div[1]').screenshot({path: `C:/Users/Dell/Desktop/Playwright Automation/screenshots/${Date.now()}_screenshot_element.png`
       });
 });
