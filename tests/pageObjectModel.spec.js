@@ -27,8 +27,9 @@ test("With POM", async({page}) =>{
     // cart
 
     const cartCheck = new cartPage(page);
+    await page.waitForTimeout(3000);
     const productInCart = await cartCheck.checkProductInCart("Nexus");
-    expect(productInCart).toBeTruthy();
+    expect(productInCart).toBe(true);
 
     await page.waitForTimeout(5000);
 

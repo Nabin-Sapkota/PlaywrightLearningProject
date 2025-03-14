@@ -15,6 +15,7 @@ class cartPage{
                 return true;
                 break;
             }
+            return false;
         }
     };
 }
